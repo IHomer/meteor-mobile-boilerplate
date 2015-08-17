@@ -1,0 +1,37 @@
+<template name="appLayout">
+<!--[if lt IE 9]>
+<p class="browser-warning"><strong><i class="icon-exclamation-sign"></i> Warning</strong> - You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" target="_blank">upgrade your browser</a> to properly view this website.</p>
+<![endif]-->
+{{#contentFor "headerButtonRight"}}
+    <button class="button button-clear pull-right" data-ion-menu-toggle="right">
+        {{> ionIcon icon='navicon'}}
+    </button>
+{{/contentFor}}
+{{#ionBody}}
+
+    {{#ionSideMenuContainer side="right"}}
+
+        {{#ionSideMenus}}
+
+            {{#ionSideMenu side="right"}}
+                {{>_rightSideMenu}}
+            {{/ionSideMenu}}
+
+        {{/ionSideMenus}}
+
+        {{#ionSideMenuContent}}
+
+            {{> ionNavBar class="bar-positive"}}
+
+            {{#ionNavView}}
+
+                {{> yield}}
+            {{/ionNavView}}
+
+        {{/ionSideMenuContent}}
+
+    {{/ionSideMenuContainer}}
+
+{{/ionBody}}
+
+</template>

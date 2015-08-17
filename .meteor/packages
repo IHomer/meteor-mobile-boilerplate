@@ -1,0 +1,40 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+meteor-platform
+
+browser-policy
+check
+coffeescript
+ejson
+jquery
+less
+
+accounts-password
+
+useraccounts:ionic
+useraccounts:iron-routing
+
+iron:router
+fourseven:scss@2.0.0
+meteoric:ionic-sass
+meteoric:ionicons-sass
+meteoric:ionic
+
+
+raix:push
+mdg:geolocation
+
+
+alanning:roles
+zimme:iron-router-active
+reywood:publish-composite
+momentjs:moment
+yasinuslu:blaze-meta
+cmather:handlebars-server@0.2.0
+cunneen:mailgun
+dburles:collection-helpers
+matb33:collection-hooks
