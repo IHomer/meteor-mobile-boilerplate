@@ -1,19 +1,13 @@
 <template name="_rightSideMenu">
-    <div class="bar bar-header bar-dark">
-        <h1 class="title">Right Menu</h1>
-    </div>
-    <div class="content has-header">
-        <div class="list">
-
-            {{#ionItem path='dashboard'}}
-                Dashboard
-            {{/ionItem}}
-            {{#ionItem }}
-                Menu item 1
-            {{/ionItem}}
-            {{#ionItem }}
-                Menu item 2
-            {{/ionItem}}
-        </div>
-    </div>
+<nav>
+    <ul class="right hide-on-med-and-down">
+        <li><a href="#!">First Sidebar Link</a></li>
+        <li><a href="#!">Second Sidebar Link</a></li>
+    </ul>
+    <ul id="slide-out" class="side-nav">
+        <li><a href="#!">First Sidebar Link</a></li>
+        <li><a href="#!">Second Sidebar Link</a></li>
+    </ul>
+    <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+</nav>
 </template>

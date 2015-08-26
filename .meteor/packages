@@ -15,14 +15,13 @@ less
 
 accounts-password
 
-useraccounts:ionic
+useraccounts:materialize
 useraccounts:iron-routing
 
 iron:router
-fourseven:scss@2.0.0
-meteoric:ionic-sass
-meteoric:ionicons-sass
-meteoric:ionic
+
+
+materialize:materialize
 
 
 raix:push

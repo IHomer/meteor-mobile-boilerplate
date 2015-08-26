@@ -1,18 +1,33 @@
 <template name="dashboard">
-{{#ionView}}
-    {{#ionContent}}
         <div class="template-dashboard">
-            <div class="page-header">
-                <h1>Dashboard</h1>
+            <div class="widget-item z-depth-1">
+                <b>Sign In</b>
+
+                <div>
+                    <div class="row">
+                        <form class="col s12">
+                            <div class="row">
+
+                                <div class="input-field col s12">
+                                    <i class="mdi-action-account-circle prefix"></i>
+                                    <input id="username" type="text" class="validate">
+                                    <label for="username">Username</label>
+                                </div>
+
+                                <div class="input-field col s12">
+                                    <i class="mdi-action-https prefix"></i>
+                                    <input id="password" type="password" class="validate">
+                                    <label for="password">Password</label></div>
+
+                                <button class="btn waves-effect waves-light" type="submit">
+                                    Login<i class="mdi-action-lock-open right"></i></button>
+
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+
             </div>
-
-            <ul class="list-group">
-                {{#each items}}
-                <li class="list-group-item">{{ name }} <span class="label label-default">{{ rating }}</span></li>
-                {{/each}}
-            </ul>
-
         </div>
-    {{/ionContent}}
-{{/ionView}}
 </template>

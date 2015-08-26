@@ -2,36 +2,30 @@
 <!--[if lt IE 9]>
 <p class="browser-warning"><strong><i class="icon-exclamation-sign"></i> Warning</strong> - You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" target="_blank">upgrade your browser</a> to properly view this website.</p>
 <![endif]-->
-{{#contentFor "headerButtonRight"}}
-    <button class="button button-clear pull-right" data-ion-menu-toggle="right">
-        {{> ionIcon icon='navicon'}}
-    </button>
-{{/contentFor}}
-{{#ionBody}}
+<nav>
+    <ul id="slide-out" class="side-nav">
+        <li><a class="waves-effect waves-teal" href="/dashboard">Dashboard</a></li>
+        <li><a class="waves-effect waves-teal" href="/">Home</a></li>
+        <li><a class="waves-effect waves-teal" data-action="logout">Logout</a></li>
+    </ul>
 
-    {{#ionSideMenuContainer side="right"}}
+    <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col s12 m8 l8">
+            {{> yield}}
+        </div>
+    </div>
+</div>
 
-        {{#ionSideMenus}}
-
-            {{#ionSideMenu side="right"}}
-                {{>_rightSideMenu}}
-            {{/ionSideMenu}}
-
-        {{/ionSideMenus}}
-
-        {{#ionSideMenuContent}}
-
-            {{> ionNavBar class="bar-positive"}}
-
-            {{#ionNavView}}
-
-                {{> yield}}
-            {{/ionNavView}}
-
-        {{/ionSideMenuContent}}
-
-    {{/ionSideMenuContainer}}
-
-{{/ionBody}}
+<footer>
+    <div class="footer-copyright">
+        <div class="container">
+            © 2014 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">About Me</a>
+        </div>
+    </div>
+</footer>
 
 </template>
